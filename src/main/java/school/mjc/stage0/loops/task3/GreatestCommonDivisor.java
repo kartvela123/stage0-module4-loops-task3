@@ -9,15 +9,21 @@ public class GreatestCommonDivisor {
         }else {
             min = second;
         }
-        for (int num = 1; num <= min; num ++) {
-            if ((second % num == 0) && (first % num == 0)) {
-                if (num > max) {
-                    max = num;
+        if (first == 0) {
+            System.out.println(second);
+        } else if (second == 0) {
+            System.out.println(first);
+        } else {
+            for (int num = 1; num <= min; num ++) {
+                if ((second % num == 0) && (first % num == 0)) {
+                    if (num > max) {
+                        max = num;
+                    }
+
                 }
 
             }
-
-        }
-        System.out.println(max);
+         System.out.println(max);
     }
 }
+    }
