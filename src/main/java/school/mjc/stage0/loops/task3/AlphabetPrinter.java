@@ -2,7 +2,12 @@ package school.mjc.stage0.loops.task3;
 
 public class AlphabetPrinter {
     public void printAlphabet() {
-        for (char a = 'a'; a =='z'; a++) {
+        char first = 'a';
+        char last = 'b';
+
+        for (int num  = first; num <= last; num++) {
+            char result = (char) num;
+            System.out.println(result);
 
         }
     }
